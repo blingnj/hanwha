@@ -1,0 +1,239 @@
+@charset 'utf--8';
+@import url('common.css');
+
+.main_nav> li:nth-child(1)>a{
+    color: #f77f58;
+}
+.top_common{
+    margin: 80px auto;
+    width: 100%;
+    height: 180px;
+    background-color: #051046;
+
+    position: sticky; top:0;
+    z-index: 999;
+}
+.top_common > div{
+    width: 80%;
+    margin: 0 auto;  
+}
+.top_common > div > p{
+    text-align: right;
+    padding: 20px 30px;
+    vertical-align: middle;
+
+    position: sticky; top:100px;
+
+}
+.top_common > div > p > img{
+    width: 10px;
+    vertical-align: middle;
+}
+.top_common > div > p > span::before{
+    content:">";
+    clear:both;
+    display: inline;
+    margin: 5px;
+}
+.top_common > div > p > span{
+    font-size: 12px;
+    font-weight: bold;
+    color: #ddd;}
+
+.top_common > div > nav{}
+.top_common > div > nav > ul{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    margin-top: 70px;
+}
+.top_common > div > nav > ul > li{}
+.top_common > div > nav > ul > li >a{
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(63, 63, 138);
+    transition: 0.5s;
+}
+.top_common > div > nav > ul > li:nth-child(1) a{
+    font-size: 24px;
+    color:#ddd;
+}
+.top_common > div > nav > ul > li:nth-child(1):after{
+    content: '/';
+    display: inline;
+    clear:both;
+    font-size: 22px;
+    font-weight: bold;
+    color: rgb(62, 63, 139);
+    padding: 25px;
+}
+.top_common > div > nav > ul > li:nth-child(2):after{
+    content: '/';
+    display: inline;
+    clear:both;
+    font-size: 22px;
+    font-weight: bold;
+    color: rgb(62, 63, 139);
+    padding: 25px;
+}
+.top_common > div > nav > ul > li:nth-child(n) a:hover{
+    color:#ddd; 
+}
+
+
+/* 인사말 */
+.int{
+    padding-top: 150px;
+    width: 80%;
+    margin: 0 auto;
+}
+.int div h3{
+    text-align: center;
+}
+.int div figure{
+    width: 100%; height: 650px;
+    margin: 30px auto;
+    background-color: #070c25;  
+    overflow: hidden;
+
+    display: flex;
+    position: relative;
+}
+.int div figure > img{
+    width: 30%;
+}
+.int div figure > p{
+    background-color: #fff;
+    width:70%;
+    padding: 50px;
+    border-radius: 15px;
+
+    position: absolute;
+    left:20%; top:5%;
+
+}
+.int div figure p span{
+    white-space: pre-line;
+}
+.int div figure p img{}
+
+
+/* 주요업무 */
+.int2{
+    padding-top: 150px;
+    width: 80%;
+    margin: 0 auto;}
+.int2 >div{}
+.int2 > div > h2{}
+.content_icon1{
+    display: flex;
+    justify-content:center;
+    flex-wrap: wrap;
+}
+.content_icon1 p{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 0 40px;
+}
+.content_icon1 p img{
+    padding:40px 0 10px 0;
+}
+
+.content_icon1 p span{} 
+
+/* 센터안내 */
+.int3{
+    padding-top: 100px;
+    width: 80%; 
+    overflow: hidden;
+    margin: 100px auto;
+}
+.int3 div{}
+.int3 div h2{}
+.int3 div >p{
+    margin: 30px auto;
+}
+.center_map{
+    background:url("/img/aqua_thm2.jpg")0 0/1300px no-repeat ;
+}
+.center_map > ul{
+    height: 500px;
+    background: rgba(0,0,0, 0.5);
+    display: flex;
+}
+.center_map > ul > li{
+    border: 1px solid #000;
+    margin:2px;
+    flex-grow:1;
+    transition:0.5s;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.center_map > ul> li> p> img{
+    width:80%;
+    margin: 0 auto;
+}
+.center_map > ul> li:hover p{
+    display: none;
+    transition: 1s;
+}
+.center_map > ul> li> div{
+    display: none;
+}
+.center_map  ul li:hover .open{
+    width: 100%; height: 100%;
+    background:rgba(255,255,255, 0.9); 
+    display: block;}
+
+.open ul li{
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    align-items: center;
+
+    transition: 1s;
+}
+.open >ul> li> img{
+    width: 500px; height:250px;
+    border-radius: 10px;
+    margin: 20px;
+}
+.open ul li span{
+    text-align: center;
+    white-space: pre-line;
+}
+.open ul li div{
+    display: flex;
+    justify-content: center;
+}
+.open > ul > li > div > a{
+    height: 27px;
+    margin: 10px 1px;
+    padding: 3px 10px;
+    text-align: center;
+    border-radius: 20px;
+    color: #fff;
+    background: #f74;
+    font-weight: bold;
+}
+
+.open ul li small{
+    text-align: left;
+    white-space: pre-line;
+    padding-bottom: 10px;
+}
+
+.center_map > ul> li:hover{
+    flex-grow:10;    
+    transition: 1s; 
+}
+.center_map > ul> li:hover p{
+    display: none;
+    transition: 1s;
+}
