@@ -154,36 +154,47 @@ body{}
 /* 메인페이지 3 */
 
 .main_3{
-    width: 80%;
+    width: 80%; 
     margin: 100px auto;
     position: relative;
 }
-
-
 .main_3 div{}
 .main_3 div h3{ 
     font-size: large;
     margin-bottom: 20px;
 }
 
-.research1{margin:0 auto;}
+.research1{
+    margin:0 auto;
 
-.research1 img{
-    float:left;
-    width: 50%;
+    display: flex;
+    justify-content: center ;
+    align-items: flex-end;
+
+    width: 100%;
+}
+
+.research1 > a{
+    width: 40%;
+}
+.research1 > a > img{
+    width: 99%;
     border-radius: 15px;
 }
-.research1 figure{
-    margin-top: 150px;
-    float: right;
-    width: 50%;   height: 150px;
+.research1 > figure{
+    width: 60%; height: 150px;
+    max-width: 800px;
     padding-left: 20px; 
-    overflow: hidden;
+    overflow: hidden;   
 }
 
 #res{
     height: 100%;
     animation:res1 5s 3s infinite;
+}
+
+#res a{
+
 }
 
 @keyframes res1 {
@@ -196,7 +207,7 @@ body{}
 #res small{font-size: small;}
 
 
-.main_3> a{
+.main_3 > a{
     position: absolute;
     right: 0; bottom:50px;
     font-weight: bold;
@@ -286,5 +297,6 @@ body{}
 
 
 @media (max-width:767px){
+    
     
 }

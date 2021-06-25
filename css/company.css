@@ -129,6 +129,9 @@
     display: flex;
     justify-content:center;
     flex-wrap: wrap;
+
+    max-width: 1200px;
+    margin: 0 auto;
 }
 .content_icon1 p{
     display: flex;
@@ -156,10 +159,10 @@
     margin: 30px auto;
 }
 .center_map{
-    background:url("/img/aqua_thm2.jpg")0 0/1300px no-repeat ;
+    background:url("/img/aqua_thm2.jpg")0 0/100% 100% no-repeat ;
 }
 .center_map > ul{
-    height: 500px;
+    height: 550px;
     background: rgba(0,0,0, 0.5);
     display: flex;
 }

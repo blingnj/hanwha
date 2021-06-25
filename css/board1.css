@@ -1,6 +1,9 @@
 @charset 'utf--8';
 @import url('common.css');
 
+.main_nav> li:nth-child(2)>a{
+    color: #f77f58;
+}
 .top_common{
     margin: 80px auto;
     width: 100%;
@@ -83,117 +86,134 @@
     justify-content: space-between;
 }
 .board_01 li{
+    transform-style: preserve-3d;
+    transition: 0.7s;
+
+}
+.flip{
     width: 350px; height: 300px;
-    min-width: 200px;
     margin: 10px;
     background-color: #fff;
     border-radius: 10px;
     overflow: hidden;
-    box-shadow: 1px 1px 10px rgba(0,0,0,0.5);
-}
+    box-shadow: 1px 1px 10px rgba(0,0,0,0.4);
 
-.board_01 li figure{
+    position: relative;
+}
+.front{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
+
+    position: absolute;
+    transform: rotateY(0deg);
+    backface-visibility: hidden;
 }
-.board_01 li figure img{
+.front img{
     width: 100%; height: 200px;
     margin-bottom: 10px;
 }
-.board_01 li figure h3{
+.front h3{
     font-size: 24px;
 }
-.board_01 li figure small{
+.front small{
     font-size: 12px;
     text-align: left;
     padding: 5px 15px 15px;
 }
-.board_01 li div{
-    display: none;
+.back{
+    position: absolute;
+    transform: rotateY(180deg);
+    backface-visibility: hidden;
 }
-.board_01 li div p{ 
+.back p{ 
     font-size: 14px;
     padding: 15px;
 }
-.board_01 li:hover figure{
-    display: none;
+.board_01 li:hover{
+    transform: rotateY(180deg);
 }
-.board_01 li:hover div{
-    display: block;
 
-}
-    
 
 /* 수행연구 (게시판) */
 .b1_2{
-    margin:50px auto;
+    width: 80%;
+    margin:150px auto;
 }
 .b1_2 div{}
 .b1_2 div h2{}
 .b1_2 div p {
 
-}
+}   
 .b1_2 > div > p > form{}
 .search1{ 
-    width: 800px;
-    margin: 0 auto;
+    margin: 10px auto;
+
     display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
+    justify-content: flex-end;
+    align-items: flex-end;
 }
-.search1 li{
+.search1 li{}
+.search1 li:nth-child(1){}
+.search1 li:nth-child(2){
+    margin: 0 2px;
+    border-bottom: 2px solid #000;
 }
-.search1 li label{}
-.search1 li input{}
-.search1 li:nth-child(1) input{
-    border: 1px solid #ff6633;
-}
+.search1 li:nth-child(3){}
 .search1 li select{}
 .search1 li select option{}
+.search1 li input{
+    border: 0 0 2px 0 solid #000;
+}
 .search1 li button{
     width: 45px;height: 28px;
+    background-color: #fff;
+    border: 0;
 }
 .search1 li button img{
     width: 100%;
 }
+.search1 li button:hover{
+    cursor: pointer;
+}
 
 
 .search2{
-    width: 900px;
+    width: 100%;
     margin: 0 auto;
 }
-.search2 thead{
-
-}
-.search2 th td{
-
+.search2 thead{}
+.search2 th, td{
+    line-height: 2;
 }
 .search2 thead tr{
-    border: 1px double #19115e;
-    line-height: 2;}
+    border-top: 1px solid #ff6633;
+    border-bottom: 4px double #ff6633;
+}
     
 .search2 thead tr th{
-    text-align: center;
-    border: 1px solid #ff6633;}
+    text-align: center;}
 .search2 thead tr th:nth-child(1){
-    width:80px;
+    min-width:70px;
 }
 .search2 thead tr th:nth-child(2){
-    width:550px;
+    min-width:550px;
 }
 .search2 thead tr th:nth-child(3){
-    width: 70px;
+    min-width: 70px;
 }
-.search2 thead tr th:nth-child(4){}
+.search2 thead tr th:nth-child(4){
+    min-width: 100px;
+}
 
 .search2 tbody{}
 .search2 tbody tr{
+    border-bottom: 1px solid #ff6633;
+
 }  
 .search2 tbody tr td{
     text-align: center;
-    border-bottom: 1px solid #ff6633;
 }
 .search2 thead tr td:nth-child(1){}
 .search2 thead tr td:nth-child(2){
