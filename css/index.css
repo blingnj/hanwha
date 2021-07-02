@@ -1,0 +1,333 @@
+@charset 'utf--8';
+@import url('common.css');
+
+body{}
+
+
+
+
+/* 메인페이지 1 */
+.main_1{}
+.main_1 div{   
+    margin-top: 65px;    
+    width:100%; height : 500px;
+    overflow: hidden;   
+    background: #051046;
+    position: relative;
+}
+.visual{
+    height: 100%;
+}
+.visual li{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    animation:vi 5s 2s infinite;
+}
+.visual li img{ 
+    height: 100%;
+}
+.visual li span{
+    position:absolute;
+    width:80%;
+    left:10%; top:3em;
+    color: #fff;
+    font-size: 2.3rem;
+    white-space: pre-line;
+}   
+
+@keyframes vi {
+    0%{ transform: translateY(0%);}
+    50%{ transform: translateY(-100%)}
+    100%{ transform: translateY(-100%)}
+}
+.main_1 div p{
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+
+    left: 50%; top: 90%;
+    transform: translate(-50%,0);
+}
+.main_1 div p a{
+    width: 12px; height: 12px;
+    margin: 5px;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    font-size: 0;
+}
+.main_1 p a:nth-child(1){
+    background-color:rgba(255,255,255,0.7);}
+.main_1 p a:nth-child(2){}
+.main_1 p a:nth-child(3){}
+
+
+/* 메인페이지 2 */
+.main_2{
+    width: 80%;
+    margin: 120px auto;
+    position: relative;
+}
+.main_2 div{
+    position: relative; 
+}
+.main_2 div h2{}
+.main_2 div p{
+    text-align: center;
+    line-height: 1.6rem;
+}
+.main_2 div p strong{
+    color:#ff6633;
+}
+
+.slide{
+    margin: 30px auto;
+    width: 100%;
+}
+.slide div{}
+.slide_img{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.slide_img a{
+    position: relative; 
+    margin-right: 25px;
+    width: 350px;
+    border-radius: 15px;
+    overflow: hidden;
+}
+.slide_img a:nth-child(3){
+    margin-right: 0;
+}
+.slide_img a img{
+    width: 100%;
+    transition: 0.5s;
+    border-radius: 15px;
+
+}
+.slide_img a span {
+    position: absolute;
+    left:0; bottom: -20%;
+    padding-top: 20px;
+    width:100%;  height: 20%;
+    border-radius: 15px;
+
+    background:linear-gradient(to top, rgb(255,255,255,1),rgba(255,255,255,0));
+    color: #000;
+    font-size: 0;
+    text-align: center;
+    transition: 0.5s;
+
+}
+.slide_img a:hover{
+    box-shadow: 2px 2px 5px rgba(0, 0, 0 , 0.6);
+}
+.slide_img a:hover span {
+    font-size: 1.5rem;
+    left:0; bottom:0;
+}
+.main_2 div .slide .btn {
+    position: absolute;
+    left:0; top:50%;
+    width:100%;
+
+    display:flex;
+    justify-content: space-between;
+}
+
+/* 메인페이지 3 */
+.main_3::before{
+    content: '';
+    clear: both;
+    display: block;
+
+    border-bottom: 1px solid #ff6633;
+    width: 100%;
+    margin-bottom: 120px;
+}
+.main_3{
+    width: 80%; 
+    margin: 0 auto;
+}
+.main_3 > figure{
+    width: 100%;
+    display: flex;
+    justify-content:space-between;
+    align-items: flex-start;
+
+}
+.main_3 > figure > a{
+    width: 50%;
+    border-radius: 15px;
+    overflow: hidden;
+}
+.main_3 > figure > a > img{
+    width: 100%
+}
+.research1{
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+}   
+.research1 div{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+
+}
+.research1 div h3{ 
+    font-size: 1.3rem;
+}
+.research1 div p{
+    line-height: 1.6rem;
+    padding: 20px 0 50px 0;
+}
+.research1 > a{
+    width: 250px; height: 40px;
+    font-weight: bold;
+    padding:5px 20px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+    font-size: 1.3rem;
+    color: #222;
+    text-align: center;
+}
+
+.research1 a:hover{
+    transition: 0.3s;
+    transform:translate(0, -3px)
+}
+
+/* 메인페이지 4 구조활동 */
+.main_3::after{
+    content: '';
+    clear: both;
+    display: block;
+
+    border-bottom: 1px solid #ff6633;
+    width: 100%;
+    margin: 120px 0 120px 0;
+}
+.bg4{}
+.main_4 {
+    width: 80%;
+    margin: 100px auto;
+    position:relative;
+
+}
+.main_4 div{}
+.main_4 div h3{
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+}
+.main_4 div p{
+    margin-bottom: 20px;
+    line-height: 1.7rem;
+}
+.gallery{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.gallery li{
+    width: 24%; height:200px;
+    margin-bottom: 10px;
+    position: relative;
+    overflow: hidden;
+}
+.gallery li img{ 
+    width: 100%; height:100%;
+    overflow: hidden;
+}
+.gallery li a{
+    position: absolute;
+    background: rgba(0, 0, 0 , 0.6);
+    left:-100%; bottom:-100%;
+    width:100%;
+    height:100%;
+}   
+
+.gallery li:hover img{
+    transform: rotate(5deg);
+
+}
+.gallery li:hover a{ 
+    left:0%; bottom:0%;
+}
+
+
+.main_4 > a{
+    position: absolute;
+    right: 0; top:8px;
+    font-weight: bold;
+    padding:0 10px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+    color:#000;
+}  
+.main_4 > a:hover {
+    transition: 0.3s;
+    transform: translate(-2px,-2px);
+}
+
+
+@media (max-width:767px){    
+    .main_1 div{
+        height: 250px;
+    }
+    .visual li span{
+        font-size: 1.2rem;
+    }
+    .main_2 div h2{
+        font-size: 1.5rem;
+    }
+    .main_2{
+        width: 90%;
+        margin: 80px auto;
+    }
+    .slide_img a:nth-child(1){
+        margin: 0 auto;
+    }
+    .slide_img a:nth-child(2){
+        display: none;
+    }
+    .slide_img a:nth-child(3){
+        display: none;
+    }
+    .main_3::before{
+        margin-bottom: 80px;
+    }
+    .main_3{    
+        width: 90%;
+    }
+    .main_3 figure{
+        flex-direction: column;
+    }
+    .main_3 > figure > a{
+        width: 100%;
+        margin-bottom: 25px;
+    }
+    .main_3::after{
+        margin: 80px auto;}
+
+    .research1 div p{
+        padding: 5px 0 25px 0;
+    }
+    .research1{
+        width: 100%;
+        align-items: center;
+    }
+    .research1 a{
+        font-size: 1.2rem;
+    }
+ 
+    .main_4 {
+        width: 90%;
+        margin: 80px auto;
+    }
+    .gallery li{
+        width:49%;}
+}
