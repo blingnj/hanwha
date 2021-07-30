@@ -54,17 +54,14 @@
     font-size: 1.2rem;
 }
 .case_con a p{}
-.bt_more {
-    margin-top: 70px;
+.bt_more1, .bt_more2 {
+    width: 150px;
+    margin: 70px auto;
+    border:1px solid #000;
+    padding: 10px 30px;
     text-align: center;
 }
-.bt_more a{
-    padding: 10px 30px;
-    background: #fff;
-    border:1px solid #000;
-    border-radius: 2px;
-}
-.bt_more:hover a{
+.bt_more1:hover, .bt_more2:hover{
     font-weight: bold;
 }
 
@@ -119,19 +116,6 @@
     font-size: 1.2rem;
 }
 .conserve_con a p{}
-.bt_more {
-    margin-top: 70px;
-    text-align: center;
-}
-.bt_more a{
-    padding: 10px 30px;
-    background: #fff;
-    border:1px solid #000;
-    border-radius: 2px;
-}
-.bt_more:hover a{
-    font-weight: bold;
-}
 
     /* 법률정보 */
 .b2_3{}
@@ -148,10 +132,16 @@
     margin-right: 20px;
     padding: 3px 15px;
 }
+.b2_3 > p > a.active{
+    font-weight: bold;
+    background: #ff6633;
+    color: #fff;
+}
 .b2_3> p> a:hover{
     font-weight: bold;
     background: #ff6633;
     color: #fff;
+    cursor: pointer;
 }   
 .back_3{
     background: #264c96 url(../img/aqua_intro2.jpg)no-repeat  0 0/ 100%;
@@ -166,23 +156,32 @@
     border-radius: 15px;
     padding: 50px;
 }
-
-.law_bef{
+.law_aft{
     display: none;
 }
-.law_bef p{
-    font-family:"GmarketSansMedium", sans-serif;
+.law_aft.active{
+    display: block;
     white-space: pre-line;
-    line-height: 1.6rem;
-}
-.law_bef a{
-    background-color: #fff;
-    box-shadow: 2px 2px 5px rgba(0,0,0,3);
-    padding: 2px 10px;
-    text-align: right;
 }
 
-.law_aft{
-    white-space: pre-line;
+
+@media (max-width:767px){
+    .b2_1,.b2_2{
+        width: 90%;
+        min-width: 500px;
+        margin: 100px auto;
+    }
+    .b2_1 > div > p{
+        line-height: 1rem;
+        margin: 30px auto;
+    }
+    .b2_2 > div > div{
+        line-height: 1rem;
+        margin: 30px auto;
+    }
+    .rescue li,.conserve li{
+        width: 49%;
+        margin-bottom: 50px;
+    }
 }
 
