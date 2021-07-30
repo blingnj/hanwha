@@ -6,66 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="css/board1.css" rel="stylesheet">
+    
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+    <script src="./js/common.js"></script>
 </head>
 <body>
-    <header>
-        <div class="head">
-            <div>
-                <a href="index.html"><img src="img/logo_center.png"></a>
-            </div>
-            <nav> 
-                <ul class="main_nav">
-                    <li>
-                        <a href="company.html">연구센터소개 </a>
-                        <div>
-                            <ul class="menu">
-                                <li><a href="company.html">인사말</a></li>
-                                <li><a href="#c1_2">주요업무</a></li>
-                                <li><a href="#c1_3">센터안내</a></li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li>
-                        <a href="board1.html">연구활동 </a>
-                        <div>
-                            <ul class="menu">
-                                <li><a href="#board1.html">연구분야</a></li>
-                                <li><a href="#b1_2">수행연구</a></li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li>
-                        <a href="board2.html">구조활동</a>
-                        <div >
-                            <ul class="menu">
-                                <li><a href="board2.html">구조및치료</a></li>
-                                <li><a href="#b2_2">보전활동</a></li>
-                                <li><a href="#b2_3">법률정보</a></li>
-                            </ul>    
-                        </div>
-                    </li>
-                    <li>
-                        <a href="board3.html">보호대상해양생물</a>
-                        <div>
-                            <ul class="menu">
-                                <li><a href="board3.html">해양생물소개</a></li>
-                                <li><a href="#b3_2">학습게시판</a></li>
-                            </ul>
-                        </div>
-                        </li>
-                </ul> 
-            </nav>
-            <a href="#" class="menu_trigger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </a>
+    <header></header>
+    <aside>
+        <div>
+            <span></span>
+            <span></span>  
+            top
         </div>
-    </header>
+    </aside>
  
-
     <main>
-        <article class="top_common">
+        <div class="top_common">
             <div>
                 <p>
                     <img src="img/icon_home.png">
@@ -73,13 +29,13 @@
                     <span>연구분야</span>
                 </p>  
                 <nav>
-                    <ul>
-                        <li><a href="#b1_1">연구분야</a></li>
-                        <li><a href="#b1_2">수행연구</a></li>
+                    <ul class="com_nav">
+                        <li class="active">연구분야</li>
+                        <li>수행연구</li>
                     </ul>
                 </nav>
             </div>
-        </article>
+        </div>
 
 
         <article class="b1_1">
@@ -90,11 +46,14 @@
                             <figure class="front">
                                 <img src="img/gallery_w1.PNG">
                                 <h3>해수관상생물연구</h3>
-                                <small>아쿠아리움의 해양생물의 사육기술, 건강관리 및 질병제어기술 등을 연구</small>
+                                <small>아쿠아리움의 해양생물의 사육기술, 건강관리 및
+                                    질병제어기술 등을 연구합니다.</small>
                             </figure>
                             <div class="back">
-                                <p>- 해수어, 갑각류, 연체류 등 해수관상생물이 아쿠아리움 내에서 건강하게 서식할 수 있도록 영양조절, 질병예방, 질병제어기술을 연구합니다.</p>
-                                <p>- 또한 아직까지 밝혀지지 않은 많은 해양생물의 생리, 생태연구를 통하여 사육기술의 향상과 번식연구에 기초적인 정보를 제공함으로써 해양생태계의 종보존과 유지에 기여합니다.</p>
+                                <p>- 해수어, 갑각류, 연체류 등 해수관상생물이 아쿠아리움 내에서 건강하게 서식할 수 있도록 영양조절,
+                                    질병예방, 질병제어기술을 연구합니다.</p>
+                                <p>- 또한 아직까지 밝혀지지 않은 많은 해양생물의 생리, 생태연구를 통하여 사육기술의
+                                    향상과 번식연구에 기초적인 정보를 제공함으로써 해양생태계의 종보존과 유지에 기여합니다.</p>
                             </div>
                         </div>
                     </li>
@@ -102,12 +61,14 @@
                         <div class="flip">
                             <figure class="front">
                                 <img src="img/gallery_w1.PNG">
-                                <h3>해수관상생물연구</h3>
-                                <small>아쿠아리움의 해양생물의 사육기술, 건강관리 및 질병제어기술 등을 연구</small>
+                                <h3>동물번식연구</h3>
+                                <small>바다표범, 펭귄, 수달 등의 해양포유류 및 조류의 개체관리,
+                                    서식지 환경 조성 등을 통한 번식연구를 합니다.</small>
                             </figure>
                             <div class="back">
-                                <p>- 해수어, 갑각류, 연체류 등 해수관상생물이 아쿠아리움 내에서 건강하게 서식할 수 있도록 영양조절, 질병예방, 질병제어기술을 연구합니다.</p>
-                                <p>- 또한 아직까지 밝혀지지 않은 많은 해양생물의 생리, 생태연구를 통하여 사육기술의 향상과 번식연구에 기초적인 정보를 제공함으로써 해양생태계의 종보존과 유지에 기여합니다.</p>
+                                <p>- 바다표범, 펭귄, 수달 등의 해양포유류 및 조류의 개체관리, 이들의 서식지 환경 조성 등을 통한 번식
+                                    연구로 종 다양성과 보존에 기여하며, CITES(멸종위기에 처한 야생동∙식물종의 국제거래에 관한 협약)에
+                                    등록된 동물의 보호에도 힘쓰고 있습니다.</p>
                             </div>
                         </div>
                     </li>
@@ -115,12 +76,12 @@
                         <div class="flip">
                             <figure class="front">
                                 <img src="img/gallery_w1.PNG">
-                                <h3>해수관상생물연구</h3>
+                                <h3>동물번식연구</h3>
                                 <small>아쿠아리움의 해양생물의 사육기술, 건강관리 및 질병제어기술 등을 연구</small>
                             </figure>
                             <div class="back">
-                                <p>- 해수어, 갑각류, 연체류 등 해수관상생물이 아쿠아리움 내에서 건강하게 서식할 수 있도록 영양조절, 질병예방, 질병제어기술을 연구합니다.</p>
-                                <p>- 또한 아직까지 밝혀지지 않은 많은 해양생물의 생리, 생태연구를 통하여 사육기술의 향상과 번식연구에 기초적인 정보를 제공함으로써 해양생태계의 종보존과 유지에 기여합니다.</p>
+                                <p>- 종의 생존에 있어서 번식은 필수적입니다. 환경오염과 기후변화 그리고 인간의 이기심에 의한 남획으로
+                                    동물들은 번식을 위한 생태환경을 잃어가고 배우자를 만나는 기회 또한 줄게 되었습니다.</p>
                             </div>
                         </div>
                     </li>
@@ -128,15 +89,20 @@
                         <div class="flip">
                             <figure class="front">
                                 <img src="img/gallery_w1.PNG">
-                                <h3>해수관상생물연구</h3>
-                                <small>아쿠아리움의 해양생물의 사육기술, 건강관리 및 질병제어기술 등을 연구</small>
+                                <h3>LSS연구</h3>
+                                <small>한정된 공간에서 살고 있는 전시 생물들의 쾌적한 환경을 위해
+                                    Life Support System(LSS)을 연구합니다.</small>
                             </figure>
                             <div class="back">
-                                <p>- 해수어, 갑각류, 연체류 등 해수관상생물이 아쿠아리움 내에서 건강하게 서식할 수 있도록 영양조절, 질병예방, 질병제어기술을 연구합니다.</p>
-                                <p>- 또한 아직까지 밝혀지지 않은 많은 해양생물의 생리, 생태연구를 통하여 사육기술의 향상과 번식연구에 기초적인 정보를 제공함으로써 해양생태계의 종보존과 유지에 기여합니다.</p>
+                                <p>- LSS(Life Support System)는 생물이 살기에 적합한 환경을 조성하는데 필요한 설비 등을 말합니다.</p>
+                                <p>- 자연환경이 아닌 인공적인 사육환경에서의 동물들의 복지를 위하여 최대한 자연과 유사한 환경을
+                                    제공하고자 노력하고 있습니다.</p>
+                                <p>- 여과시스템 개선을 통한 사육수 관리, 냉각기 및 열교환기 등을 통한 온도조절, 자연과 유사한 광주기와
+                                    조도를 제공하기 위한 조명 등을 연구합니다.</p>
                             </div>
                         </div>
                     </li>
+
                 </ul>
             </div>
         </article>
@@ -165,9 +131,9 @@
                                 <input type="search" placeholder="검색어를 입력하세요">
                             </li>
                             <li>
-                                <!-- <input type="submit" value="검색"> -->
                                 <button><img src="img/search.png"></button>
-                            </li>   
+                            </li>
+                            <!-- <input type="submit" value="검색"> -->
                         </ul>   
                     </form>
                 </p>
@@ -180,37 +146,10 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
-                        <td>2020.02</td><td><a href="#">더 정글 폭포전시장 식물 원예를 통한 전시효과 증대<a></a></td><td>일산</td><td>김세영dfasdfasdfasdf</td>
-                    </tr>
-                    <tr>
-                        <td>2020.02</td><td><a href="#">더 정글 폭포전시장 식물 원예를 통한 전시효과 증대<a></a></td><td>일산</td><td>김세영dfasdfasdfasdf</td>
-                    </tr>
-                    <tr>
-                        <td>2020.02</td><td><a href="#">더 정글 폭포전시장 식물 원예를 통한 전시효과 증대<a></a></td><td>일산</td><td>김세영dfasdfasdfasdf</td>
-                    </tr>
-                    <tr>
-                        <td>2020.02</td><td><a href="#">더 정글 폭포전시장 식물 원예를 통한 전시효과 증대<a></a></td><td>일산</td><td>김세영dfasdfasdfasdf</td>
-                    </tr>
-                    <tr>
-                        <td>2020.02</td><td><a href="#">더 정글 폭포전시장 식물 원예를 통한 전시효과 증대<a></a></td><td>일산</td><td>김세영dfasdfasdfasdf</td>
-                    </tr>
-                    <tr>
-                        <td>2020.02</td><td><a href="#">더 정글 폭포전시장 식물 원예를 통한 전시효과 증대<a></a></td><td>일산</td><td>김세영dfasdfasdfasdf</td>
-                    </tr>
-                    <tr>
-                        <td>2020.02</td><td><a href="#">더 정글 폭포전시장 식물 원예를 통한 전시효과 증대<a></a></td><td>일산</td><td>김세영dfasdfasdfasdf</td>
-                    </tr>
-                    <tr>
-                        <td>2020.02</td><td><a href="#">더 정글 폭포전시장 식물 원예를 통한 전시효과 증대<a></a></td><td>일산</td><td>김세영dfasdfasdfasdf</td>
-                    </tr>
-                    <tr>
-                        <td>2020.02</td><td><a href="#">더 정글 폭포전시장 식물 원예를 통한 전시효과 증대<a></a></td><td>일산</td><td>김세영dfasdfasdfasdf</td>
-                    </tr>
-                    <tr>
-                        <td>2020.02</td><td><a href="#">더 정글 폭포전시장 식물 원예를 통한 전시효과 증대<a></a></td><td>일산</td><td>김세영dfasdfasdfasdf</td>
-                    </tr>
-                </tbody>        
+                    <!-- <tr>
+                        <td>2018</td><td><a href="b1-table.html">2018 서식지외보전기관 지원사업</a></td><td>제주 / 여수 / 63</td><td></td>
+                    </tr> -->
+                </tbody>     
             </table>
             <ul class="pg_num">
                 <li><a href=#>&lt&lt</a></li> 
@@ -222,25 +161,29 @@
                 <li><a href=#>&gt&gt</a></li> 
             </ul>
         </article>
-    </main>
-
-    <footer>
-        <article class="bottom">
-            <img src="img/logo_hanwha.png">
+        <article class="res-pop">
             <nav>
-                <a href="#">회사소개</a>
-                <a href="#">사이트맵</a>
-                <a href="#">법률정보</a>
-                <a href="#">패밀리사이트</a>
-                <img src="img/txt_copyright.png">
+                <span></span>
+                <span></span>
             </nav>
-            <select>
-                <label>language</label>
-                    <option>한국어</option>
-                    <option>English</option>
-            </select>
+            <div>
+                <!-- <img src="./img/res-pop1.jpg"> -->
+                <!-- <ul>복해마의 안정적인 반입 및 사육
+                    <li>연도 : 2015</li>
+                    <li>센터명/ 아쿠아리스트 : 63씨월드/ 박선우</li>
+                    <li>연구주제:복해마의 안정적인 반입 및 사육</li>
+                    <li>Abstract:복해마의 안정적인 반입 및 사육</li>
+                </ul> -->
+            </div>
+            <p class="popbtn">
+                <a><img src="img/btn_left.png"></a>
+                <a><img src="img/btn_right.png"></a>  
+            </p>
         </article>
-    </footer>
+
+    </main>
+    <script src="./js/board1.js"></script>
+    <footer></footer>
 
 </body>
 </html>
