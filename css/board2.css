@@ -51,6 +51,7 @@
 .case_con{}
 .case_con a{}
 .case_con a h3{
+    margin:15px;
     font-size: 1.2rem;
 }
 .case_con a p{}
@@ -113,6 +114,7 @@
 .conserve_con{}
 .conserve_con a{}
 .conserve_con a h3{
+    margin:15px;
     font-size: 1.2rem;
 }
 .conserve_con a p{}

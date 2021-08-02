@@ -337,8 +337,8 @@ aside.active::after {
         padding:15px;
         position:absolute;
         right:0; top:100%;
-        border:1px solid #ff6633;
-        border-radius:0 0 10px 10px;
+        /* border:1px solid #ff6633;
+        border-radius:0 0 10px 10px; */
     
         display: flex;
         flex-direction: column;
