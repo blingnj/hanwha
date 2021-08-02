@@ -1,0 +1,304 @@
+@charset 'utf--8';
+@import url('common.css');
+
+.main_nav> li:nth-child(2)>a{
+    color: #f77f58;
+}
+
+/* 연구분야 */
+.b1_1{}
+.b1_1 > div{
+    width: 80%;
+    margin: 0 auto;
+}
+.board_01{
+    display:flex;
+    justify-content: space-between;
+    animation: a1 1s 0.05s forwards;
+}
+@keyframes a1{
+    from{opacity: 0;transform: translateY(10%);}
+    to{opacity: 1;transform: translateY(0%);}
+}
+
+.board_01 li{
+    width: 350px; height: 420px;
+    margin: 10px;
+}
+
+.flip{
+    box-shadow: 1px 1px 10px rgba(0,0,0,0.4);
+    background-color: #fff;
+    border-radius: 10px;
+    width: 100%; height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: 0.7s;
+}
+.front,.back{
+    position: absolute;
+    border-radius: 10px;
+    width: 100%; height: 100%;
+    left:0; top:0;
+    overflow: hidden;
+}
+.front{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    transform: rotateY(0deg);
+}
+.front img{
+    width: 100%; height: 200px;
+    margin-bottom: 30px;
+}
+.front h3{
+    font-size: 1.6rem;
+}
+.front small{
+    font-size: 1rem;
+    text-align: left;
+    padding: 1rem 2rem;
+    line-height:1.5;
+}
+.back{
+    transform: rotateY(180deg);
+    background: #fff;
+    padding:5%;
+}
+
+
+.back p{ 
+    font-size: 1rem;
+    padding: 15px;
+    line-height: 1.5;
+}
+.flip.active{ 
+    transform: rotateY(180deg);
+}
+
+
+/* 수행연구 (게시판) */
+.b1_2{
+    width: 80%;
+    margin:150px auto;
+}
+.b1_2 div{}
+.b1_2 div h2{}
+.b1_2 div p {
+
+}   
+.b1_2 > div > p > form{}
+.search1{ 
+    margin: 10px auto;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+.search1 li{    }
+.search1 li:nth-child(1){}
+.search1 li:nth-child(2){}
+.search1 li:nth-child(3){}
+.search1 li select{}
+.search1 li select option{}
+.search1 li input{
+    display: inline-block;
+    border: none;
+    border-bottom: 2px solid #000;
+    text-align: center;
+    outline-style: none;
+    margin-left: 10px;
+}
+.search1 li button{
+    width: 45px; height: 28px;
+    background-color: #fff;
+    border: none;
+}
+.search1 li button img{
+    width: 100%;
+}
+.search1 li button:hover{
+    cursor: pointer;
+}
+.search2{
+    width: 100%;
+    margin: 0 auto;
+}
+.search2 thead{}
+.search2 th, td{
+    padding:20px 0;
+}
+.search2 thead tr{
+    border-top: 1px solid #ff6633;
+    border-bottom: 4px double #ff6633;
+}
+.search2 thead tr th{
+    text-align: center;
+}
+.search2 thead tr th:nth-child(1){
+    min-width: 100px;
+}
+.search2 thead tr th:nth-child(2){
+    min-width: 500px;
+}
+.search2 thead tr th:nth-child(3){
+    min-width: 70px;
+}
+.search2 thead tr th:nth-child(4){
+    min-width: 100px;
+}
+
+.search2 tbody{}
+.search2 tbody tr{
+    border-bottom: 1px solid #ff6633;
+}  
+.search2 tbody tr td{
+    text-align: center;
+}
+.search2 tbody tr td:nth-child(1){}
+.search2 tbody tr td:nth-child(2){
+    text-align: left;
+    cursor: pointer;
+    /* text-overflow: ellipsis; */
+}
+.search2 tbody tr td:nth-child(3){}
+.search2 tbody tr td:nth-child(4){}
+
+.search2 tbody tr td:nth-child(2):hover{
+    
+    text-decoration: underline;
+}
+
+.pg_num{
+    width: 600px;
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+}
+.pg_num li{
+        width: 30px;}
+.pg_num li a{
+    width: 100%;
+    font-size: 12px;
+}
+.pg_num li:nth-child(3) a{
+    font-size: 14px;
+    font-weight: bold;
+    color: #ff6633;
+}
+
+.pg_num li:hover a{
+    font-size:14px;
+    color: #ff6633;
+}
+.res-pop{
+    position:fixed;
+    left:0; top:0;
+    width:100%; height: 100vh;
+    overflow:auto;
+    background:rgba(0,0,0,0.8);
+    z-index:100000;
+    display: none;
+}
+.res-pop.active{
+    display: block;
+}
+.res-pop nav{
+    position: fixed;
+    top: 50px; left: 95%;
+    width:26px; height:14px;
+
+    z-index:100001;
+}
+.res-pop nav span{
+    position:absolute;
+    left:0;
+    width:100%; height:3px;
+    background-color: #fff;
+}
+.res-pop nav span:nth-child(1){
+    transform: rotate(-45deg);
+}
+.res-pop nav span:nth-child(2){
+    transform: rotate(45deg);
+}
+.res-pop div{
+    width:1000px;
+    margin:150px auto;
+    display: flex;
+    flex-direction: column;}
+    
+.popbtn{
+    position: fixed;
+    top:50%; left: 5%;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+.popbtn a{
+    background: #fff;
+    width:30px; height:50px;    
+}
+.popbtn a img{}
+
+body.active{
+    overflow: hidden;
+}
+
+@media (max-width:1200px){
+    .board_01{
+        flex-wrap: wrap;
+    }
+    .board_01 li{
+        width: 45%;
+        max-width: 350px;
+        margin-bottom: 20px;
+    }
+}
+@media (max-width:767px){
+    .b1_1 > div{
+        width: 90%;
+    }
+    .board_01{
+        flex-wrap: wrap;
+        justify-content: center;
+        }
+    .board_01 li{
+        max-width: 350px;
+        width: 100%; height: 300px;
+        margin: 10px; padding:10px;
+    }
+    .front img{
+        height: 150px;
+        margin-bottom: 15px;
+    }
+    .front h3{
+        font-size: 1.3rem;
+    }
+    .front small{
+        font-size: 0.8rem;
+        text-align: left;
+        padding: 0.8rem 1rem;
+        line-height:1.5;
+    }
+    .b1_2{
+        width: 90%;
+    }
+    .search1{ 
+        flex-wrap: wrap;
+    }
+    .search2 thead tr th:nth-child(1){
+        min-width: 10px;
+    }
+    .search2 thead tr th:nth-child(2){
+        min-width: 200px;
+    }
+    
+    .search2 thead tr th:nth-child(3){
+        min-width: 50px;
+    }
+    .search2 thead tr th:nth-child(4){
+        min-width: 70px;
+    }
+}

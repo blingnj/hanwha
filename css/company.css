@@ -1,0 +1,253 @@
+@charset "utf--8";
+@import url('common.css');
+
+.main_nav> li:nth-child(1)>a{
+    color: #f77f58;
+}
+
+
+
+/* 인사말 */
+.int{
+    width: 80%;
+    margin: 100px auto;
+}
+.int div h2{}
+.int div h3{
+    margin: 3rem;
+    font-size: 1.2rem;
+    text-align: center;
+}
+.int div figure{
+    width: 100%;
+    margin: 0px auto;
+    background-color: #051046;  
+
+    display: flex;
+    position: relative;
+    overflow: hidden;
+}
+.int div figure > img{
+    width: 30%;
+}
+.int div figure > p{
+    background-color: #fff;
+    width:70%; height: 80%;
+    padding: 50px;
+    border-radius: 15px;
+
+    overflow: auto;
+    position: absolute;
+    left:20%; top:10%;
+}
+.int div figure p span{
+    line-height: 1.7rem;
+    word-break:keep-all;
+    white-space: pre-line;
+}
+.int div figure p b{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+/* 주요업무 */
+.int2{
+    width: 80%;
+    margin: 100px auto;}
+.int2 >div{}
+.int2 > div > h2{}
+.content_icon1{
+    display: flex;
+    justify-content:center;
+    flex-wrap: wrap;
+
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.content_icon1 p{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 0 40px;
+}
+.content_icon1 p img{
+    padding:40px 0 10px 0;
+}
+
+.content_icon1 p img:hover{
+        animation: icon 1s infinite;
+}
+@keyframes icon {
+    0% {transform :translateY(0px);}
+    50% {transform :translateY(-10px);}
+    100% {transform :translateY(0px);}
+} 
+
+/* 센터안내 */
+.int3{
+    width: 80%; 
+    overflow: hidden;
+    margin: 100px auto;
+}
+.int3 div{}
+.int3 div h2{margin:0;}
+.int3 div > p{
+    margin: 30px auto;
+    line-height: 1.7rem;
+}
+.center_map{
+    background: #fff;
+}
+.center_map > ul{
+    background-color: chocolate;
+    display: flex;
+    height: 550px;
+}
+.center_map > ul> li{
+    height: 100%;
+    margin: 0px auto;
+    flex-grow:1;
+    transition:0.5s;
+
+    /* border: 1px solid #000; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.center_map > ul> li >img{
+    width: 100px;
+}
+.center_map > ul> li:hover >img{
+    display: none;
+}
+.center_map > ul> li:hover .open{ 
+    transition: 0.5s; 
+    flex-grow:10;  
+    width:100%;
+    opacity: 1;
+    display: flex;
+}
+.open{
+    width: 0;     height: 99%;
+    background:rgba(255,255,255, 0.9); 
+
+
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    opacity: 0;
+    display: none;
+}
+.open img{
+    width: 500px; height:250px;
+    border-radius: 10px;
+    margin: 20px;
+}
+.open span{
+    text-align: center;
+    white-space: pre-line;
+}
+.open div{
+    display: flex;
+    justify-content: center;
+}
+.open div > a{
+    height: 27px;
+    margin: 10px 1px;
+    padding: 3px 10px;
+    text-align: center;
+    border-radius: 20px;
+    color: #fff;
+    background: #f74;
+    font-weight: bold;
+}
+.open small{
+    text-align: left;
+    white-space: pre-line;
+    padding-bottom: 10px;
+}
+
+@media (max-width:767px){
+    .int{
+        width: 100%;
+        margin: 40px auto;
+    }
+    .int div h2{
+        font-size: 1.4rem;
+    }
+    .int div h3{
+        margin: 5% 10%;
+        font-size: 0.8rem;
+    }
+    .int div figure{
+        width: 100%; height: 400px;
+        margin: 0px auto;
+        background-color: #051046;  
+    
+        display: flex;
+        position: relative;
+        overflow: hidden;
+
+    }
+    .int div figure > p{
+        width:90%; height: 90%;
+        padding: 10px;
+        border-radius: 10px;
+        left:5%; top:5%;
+    }
+    
+    .int div figure p span{
+        font-size: 0.8rem;
+        line-height: 1.4rem;
+        white-space: pre-line;
+    }
+    .int2 > div > h2{
+        font-size: 1.4rem;
+    }
+    .content_icon1 p{
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        width: 10rem; height: 10rem;
+    }
+    
+    /* .content_icon1 p img{
+        padding: 5px;
+    }
+    .content_icon1 p span{
+        font-size: 0.8rem; */
+
+    .int3{
+        width: 90%; 
+        margin: 80px auto;
+    }
+    .int3 div h2{
+        font-size: 1.4rem;
+    }
+    .int3 div > p{
+        margin: 30px auto;
+        font-size: 0.8rem;
+        line-height: 1.5rem;
+    }
+    .center_map{
+        background:none;
+    }
+    .center_map > ul{
+        flex-direction: column;
+    }
+    .center_map > ul > li{
+
+    }
+    .center_map > ul> li> p >img{
+        display: block;
+        width:50%;
+        margin: 0 auto;
+    }
+    .center_map > ul> li:hover p >img{
+        height: 80%;
+
+    }
+
+}
