@@ -172,25 +172,38 @@
 @media (max-width:767px){
     .b2_1,.b2_2{
         width: 90%;
-        min-width: 500px;
-        margin: 100px auto;
+        min-width: 300px;
+        margin: 50px auto;
     }
-
     .b2_1 div h2,.b2_2 div h2{
         font-size: 1.4rem;
     }
     .b2_1> div> p,.b2_2> div> div{
-        margin: 30px auto;
+        margin: 0px auto;
         font-size: 0.8rem;
-        line-height: 1.5rem;
+        line-height: 1.4rem;
     }
     .rescue li,.conserve li{
         width: 49%;
-        margin-bottom: 50px;
+        margin: 10px auto;
+        margin-bottom: 10px;
     }
-
+    .case_con a h3, .conserve_con a h3 {
+        font-size: 1rem;
+        margin: 5px;
+    }
+    .case_con > a > p{
+        display: none;
+    }
+    .conserve_con a p{
+        display: none;
+    }
+    .b2_3 h2{
+        margin:0;
+        font-size: 1.4rem;
+    }
     .b2_3 > p{
-        display: flex;
+        margin: 20px auto;
         flex-direction: column;
         justify-content: space-between;
         align-items: flex-start;
@@ -201,6 +214,9 @@
     .back_3 > div{
         width: 90%;
         min-width: 400px;
+    }
+    .bt_more1, .bt_more2 {
+        margin: 30px auto;
     }
 }
 

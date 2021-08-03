@@ -177,7 +177,6 @@
 .open.active{
     opacity: 1;
     height: 300px;
-    
 } 
     /* animation: open 1.5s forwards;
 }
@@ -271,16 +270,28 @@
         line-height: 1.4rem;
         white-space: pre-line;
     }
+    .int2{
+        margin: 50px auto;
+    }
     .int2 > div > h2{
         font-size: 1.4rem;
+        margin-bottom: 0;
     }
     .content_icon1 p{
         justify-content: center;
         align-items: center;
         margin: 0;
-        width: 10rem; height: 10rem;
+        width: 12rem; height: 10rem;
     }
     
+    .content_icon1 p img:hover{
+            animation: icon 1s infinite;
+    }
+    @keyframes icon {
+        0% {transform :translateY(0px);}
+        50% {transform :translateY(-10px);}
+        100% {transform :translateY(0px);}
+    } 
     /* .content_icon1 p img{
         padding: 5px;
     }
@@ -289,18 +300,20 @@
 
     .int3{
         width: 90%; 
-        margin: 80px auto;
+        margin: 50px auto;
     }
     .int3 div h2{
         font-size: 1.4rem;
+        padding-bottom:30px;
     }
     .int3 div > p{
-        margin: 30px auto;
-        font-size: 0.8rem;
-        line-height: 1.5rem;
+        display: none;
     }
     .logo li{
         position:relative;
+    }
+    .logo li a{
+        transform:translateX(40px)
     }
     .logo li.active{
         height: 450px;

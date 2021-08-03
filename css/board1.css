@@ -294,11 +294,13 @@ body.active{
     .search2 thead tr th:nth-child(2){
         min-width: 200px;
     }
-    
-    .search2 thead tr th:nth-child(3){
-        min-width: 50px;
+    .search2 thead tr th:nth-child(1),.search2 tbody tr td:nth-child(1){
+        padding: 0 10px;
     }
-    .search2 thead tr th:nth-child(4){
-        min-width: 70px;
+    .search2 thead tr th:nth-child(3),.search2 thead tr th:nth-child(4){
+        display: none;
+    }
+    .search2 tbody tr td:nth-child(3),.search2 tbody tr td:nth-child(4){
+        display: none;
     }
 }
