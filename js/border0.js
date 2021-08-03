@@ -74,11 +74,11 @@ $('.logo li').on('click',function(){
 
 
 
-const popBtn = document.querySelectorAll('.open-r div a:nth-child(2)')
-const popImg = document.querySelectorAll('.popimg')
+// const popBtn = document.querySelectorAll('.open-r div a:nth-child(2)')
+// const popImg = document.querySelectorAll('.popimg a')
 
-for(let i=0; i<popImg.length; i++){
-    popBtn[i].addEventListener('click',function(){
-        popImg[i].classList.add('active')
-    })
-}
+// for(let i=0; i<popImg.length; i++){
+//     popBtn[i].addEventListener('click',function(){
+//         popImg[i].classList.add('active')
+//     })
+// }

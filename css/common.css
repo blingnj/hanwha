@@ -71,10 +71,9 @@ header{
     display:block;
     font-size: 1.1rem;
 }
-.main_nav li:nth-child(1) a:hover{color:#ff6633;}
-.main_nav li:nth-child(2) a:hover{color:#ff6633;}
-.main_nav li:nth-child(3) a:hover{color:#ff6633;}
-.main_nav li:nth-child(4) a:hover{color:#ff6633;}
+.main_nav li a:hover,
+.main_nav li.active > a {color:#ff6633;}
+
 
 .main_nav li div{
         position: absolute;
@@ -113,7 +112,8 @@ header{
     opacity: 0;
     transition: 0.5s;
 }
-.menu li:hover{
+.menu li:hover a,
+.menu li.active a{
     color:#ff6633;
 }
 .menu li:hover::after{
@@ -186,6 +186,7 @@ header{
     flex-direction: row;
     align-items: flex-end;
     margin-top: 70px;
+    width: 500px;
 }
 .com_nav li{
     font-size: 20px;
@@ -312,7 +313,9 @@ aside.active::after {
     50% {opacity : 1;}
     100% {transform : scale(2.5); opacity : 0;}
 }
-
+aside:hover{
+    cursor: pointer;
+}
 
 @media (max-width:767px){
     .hd{

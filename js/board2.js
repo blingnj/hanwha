@@ -16,7 +16,7 @@ function init(){
         res.rescue.forEach(function(v,k){
 
             list += `<li><div class="case_img">
-                <a href="b2-rescue.html"><img src="${v.photo}"></a></div>
+                <a><img src="${v.photo}"></a></div>
                 <div class="case_con"><a href="#">
                         <h3>${v.name}</h3>
                         <p>${v.spot}</p>
@@ -48,7 +48,7 @@ function init(){
         
         con.conserve.forEach(function(v,k){
             conList += `<li><div class="conserve_img">
-            <a href="b2-conserve.html"><img src="${v.photo}">
+            <a><img src="${v.photo}">
             </a></div>
             <div class="conserve_con"><a href="#">
             <h3>${v.tit}</h3>

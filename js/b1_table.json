@@ -40,22 +40,26 @@
         {   "date":"2016",
             "title":"자연물을 이용한 아쿠아포리스트 디스플레이 조성",
             "center":"여수",
-            "researcher":"이봉우, 최재봉"
+            "researcher":"이봉우, 최재봉",
+            "img":"./img/res-pop1.jpg"
         },
         {   "date":"2016",
             "title":"2016 서식지외보전기관 지원사업",
             "center":"제주/ 일산",
-            "researcher":""
+            "researcher":"",
+            "img":"./img/res-pop2.jpg"
         },
         {   "date":"2015",
             "title":"2015 서식지외보전기관 지원사업",
             "center":"63씨월드/ 여수/ 제주",
-            "researcher":""
+            "researcher":"",
+            "img":"./img/res-pop3.jpg"
         },
         {   "date":"2015",
             "title":"2015 보호대상 해양생물 종 증식 및 복원사업",
             "center":"여수/ 제주",
-            "researcher":""
+            "researcher":"",
+            "img":"./img/res-pop4.jpg"
         }
         ,
         {   "date":"2018",

@@ -11,7 +11,7 @@ function init(){
         animal = JSON.parse(bthree.responseText)
         
         animal.list.forEach(function(v,k){
-            ulList +=`<a>
+            ulList +=`<a href="board3.html">
                         <img src="${v.img}">
                         <span>${v.name}<br>
                         ${v.enname}</span>

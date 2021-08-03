@@ -1,9 +1,6 @@
 @charset "utf--8";
 @import url('common.css');
 
-.main_nav> li:nth-child(1)>a{
-    color: #f77f58;
-}
 
 
 
@@ -90,7 +87,8 @@
     overflow: hidden;
     margin: 150px auto;
 }
-.int3 div{}
+.int3> div{}
+
 .int3 div h2{margin:0;}
 .int3 div > p{
     margin: 30px auto;
@@ -178,7 +176,7 @@
 }
 .open.active{
     opacity: 1;
-    height:300px;
+    height: 300px;
     
 } 
     /* animation: open 1.5s forwards;
@@ -189,10 +187,10 @@
 .open img{
     width: 40%; 
     border-radius: 10px;
-    margin: 0 20px;
+    padding: 0 20px;
 }
-.open-r{ 
-    width: 56%;    
+.open-r{
+    width: 56%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -225,18 +223,19 @@
     padding-bottom: 10px;
 }
 
-.popimg{display:none}
-.popimg.active{
+/* .popimg a {display: none;}
+.popimg a.active{
     display:block;
     position:fixed;
-    left:0; top:0;
-    width:400px;
+    left:0; top:20%;
+    width:50%;
     animation: pop22 1.5s forwards;
+    opacity:0;
 }
 @keyframes pop22 {
-    0% {transition: transformX();}
-    100% {right:0;}
-}
+    0% {transform:translateX(0);}
+    100% {opacity:1; transform:translateX(50%)}
+} */
 
 @media (max-width:767px){
     .int{
@@ -300,23 +299,50 @@
         font-size: 0.8rem;
         line-height: 1.5rem;
     }
-    .center_map{
-        background:none;
+    .logo li{
+        position:relative;
     }
-    .center_map > ul{
+    .logo li.active{
+        height: 450px;
+    }
+    .logo li.active > a{
+        z-index: 1000;
+        background: none;
+        transform: translateY(-160px);
+    }
+    .open{
+        position:absolute;
+        min-width: 350px;
+        left:0; top:15%;
         flex-direction: column;
     }
-    .center_map > ul > li{
-
+    .open.active{} 
+    .open img{
+        width: 90%; 
     }
-    .center_map > ul> li> p >img{
-        display: block;
-        width:50%;
-        margin: 0 auto;
+    .open-r{ 
+        width: 90%; 
+        align-items: center;
     }
-    .center_map > ul> li:hover p >img{
-        height: 80%;
-
+    .open-r div a:nth-child(1){
+        width:60%;
+    }
+    .open-r div a:nth-child(2){
+        width:40%;
+    }
+    .logo li>span {
+        width: 12px; height: 12px;
+    }
+    .logo li>span::before{
+        height: 2px;
+        transform :translateX(-8px)rotate(45deg);
+    }
+    .logo li>span::after{
+         height: 2px;
+    }
+    .logo li.active span::after{
+        /* transition: 1s; */
+        transform :translateX(-8px)rotate(-45deg);
     }
 
 }

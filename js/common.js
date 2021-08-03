@@ -8,69 +8,52 @@ $(function(){
             $('.sub_tri').toggleClass('active')
 
         })
+    }
 
 /*********************** 탭 클릭시 해당 페이지 이동 **************************/ 
     function tab(){
 
-        const mainNav = document.querySelectorAll('.main_nav> li')
-        const subNav = document.querySelectorAll('.menu > li')
+        const mainNav = document.querySelectorAll('.main_nav > li')
+        const subNav = [];
 
         mainNav.forEach(function(a,i){
+            subNav.push(mainNav[i].querySelectorAll('.menu > li'));
             a.addEventListener('click',function(e){
                 localStorage.pageName = i;
             });
         })
-
+        
         subNav.forEach(function(s,v){
-
-            s.addEventListener('click',function(e){
-                localStorage.subName = v;
-            });
+            s.forEach(function(li,key){
+                li.addEventListener('click',function(e){
+                    // e.stopPropagation();
+                    localStorage.subName = key;
+                });
+            })            
         })
 
+        function changeUrl(){
+            try{
+                //에러가 없을때만 동작
+                mainNav[localStorage.pageName].classList.add('active');
+                mainNav[localStorage.pageName].querySelectorAll('.menu > li')[localStorage.subName].classList.add('active');
 
-        switch(localStorage.pageName){
-            case '0' : ; 
-            break;
-            case '1' : ; 
-            break;
-            case '2' : ; 
-            break;
-            case '3' : ;
-             break;
-        }
-
-        switch(localStorage.subName){
-            case '0' : sub1() ; 
-            break;
-            case '1' : ; 
-            break;
-            case '2' : ; 
-            break;
-            case '3' : ;
-             break;
-        }
-        function sub1(){
-            const comHeader = document.querySelector('.top_common').offsetHeight;
-            const comNav = document.querySelectorAll('.com_nav li');
-            const elArt = document.querySelectorAll('article')
-            
-            let num=0;
-            for(let i=0; i<comNav.length; i++){
-                comNav[i].addEventListener('click',function(){
-                    comNav[num].classList.remove('active')
-                    comNav[i].classList.add('active')
-            
+                const comHeader = document.querySelector('.top_common').offsetHeight;
+                const elArt = document.querySelectorAll('article');
+                
+                setTimeout(function(){
                     window.scrollTo({
-                        top:elArt[i].offsetTop-comHeader,
-                       behavior:"smooth"});
-            
-                    num=i;
-                });
+                        top:elArt[localStorage.subName].offsetTop-comHeader,
+                        behavior:"smooth"
+                    });
+                },100)
+            }catch{
+                //에러 발생시 동작
+                localStorage.pageName = 'a';
+                localStorage.subName = 0;
             }
-        }
+        } changeUrl();
     }
-}   
 
 /****************** 스크롤 탑버튼 **********************/
 
@@ -93,6 +76,10 @@ $(function(){
             behavior:"smooth"
         });
     })
+
+
+
+
 });
 
 
