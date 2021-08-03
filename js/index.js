@@ -51,7 +51,7 @@ $(".slider").slick({
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay:true,
-    autoplaySpeed:1500,
+    autoplaySpeed:2000,
     fade:true
   });
 
@@ -105,17 +105,17 @@ function slide222(){
 
 /*********************** 탭 클릭시 해당 페이지 이동 **************************/ 
 
-const mainNav = document.querySelectorAll('.main_nav > li')
-const subNav = document.querySelectorAll('.menu li')
+// const mainNav = document.querySelectorAll('.main_nav > li')
+// const subNav = document.querySelectorAll('.menu li')
 
-mainNav.forEach(function(a,i){
-    console.log(a,i)
-    a.addEventListener('click',function(e){
-        localStorage.pageName = i;
-    });
-})
-subNav.forEach(function(s,v){
-    s.addEventListener('click',function(e){
-        localStorage.pageName = v;
-    });
-})
+// mainNav.forEach(function(a,i){
+//     console.log(a,i)
+//     a.addEventListener('click',function(e){
+//         localStorage.pageName = i;
+//     });
+// })
+// subNav.forEach(function(s,v){
+//     s.addEventListener('click',function(e){
+//         localStorage.pageName = v;
+//     });
+// })
