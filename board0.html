@@ -109,7 +109,7 @@
                 </figure>
             </div>
         </article>
-
+        
 
         <article class="int3" id="c1_3">
             <div>
@@ -118,38 +118,36 @@
     자연과 인간이 함께 할 수 있는 공간을 만들기 위해 아쿠아플라넷(주)가 도심 속 힐링오아시스를 만듭니다. 아쿠아(Aqua)는 바다의 웅장함, 그리고 해양과학과 인간의 만남을 뜻하며,
     플라넷(Planet)은 ‘아쿠아플라넷에서만 느낄 수 있는 첨단과학의 콘셉트를 관람객이 직접 우주 행성을 탐험하듯 즐기게 한다’는 의미를 가지고 있습니다.
                 </p>
+                <div class="aquaCenter-list-text">
+                    <span>여수센터</span>
+                    <span>제주센터</span>
+                    <span>63센터</span>
+                    <span>일산센터</span>
+                    <span>광교센터</span>
+                </div>
             </div>
-            <figure>
-                <!-- <div class="popimg">
-                    <a><img src="img/img_map_ilsan.png"></a>
-                    <a><img src="img/img_map_yeosu1.gif"></a>
-                    <a><img src="img/img_map_yeosu2.gif"></a>
-                    <a><img src="img/img_map_63.gif"></a>
-                    <a><img src="img/img_map_jeju.gif"></a>
-                </div> -->
-                <ul class="logo">
-                    <li class ="openall">
-                        <a><img src="img/logo_yeosu_horizon.png"></a>
-                        <div class="open">
+            <figure class="aquaCenter-list">
+                    <div class ="aquaCenter">
+                        <div class="center-img">
                             <img src="img/gallery_yeosu.jpg">
-                            <div class ="open-r">
-                                <span>전라남도 여수시 오동도로 61-11</span>
-                                <span>TEL. 1833-7001</span>
-                                <small>
-                                    - 해양생물연구센터 본원
-                                    - 서식지외보전기관 및 해양동물전문 구조치료기관 지정
-                                    - 전시수량 : 6,030톤
-                                    - 전시생물 : 약 350여종 55,000여 마리
-                                </small>
-                                <div>
-                                    <a href="https://www.aquaplanet.co.kr/yeosu/index.do">아쿠아플라넷 여수</a>
-                                    <a>오시는길</a>
-                                </div>
+                            <img src="img/logo_yeosu_horizon.png">
+                        </div>
+                        <div class="center-con">
+                            <span>전라남도 여수시 오동도로 61-11</span>
+                            <span>TEL. 1833-7001</span>
+                            <ul>
+                                <li>- 해양생물연구센터 본원</li>
+                                <li>- 서식지외보전기관 및 해양동물전문 구조치료기관 지정</li>
+                                <li>- 전시수량 : 6,030톤</li>
+                                <li>- 전시생물 : 약 350여종 55,000여 마리</li>
+                            </ul>
+                            <div>
+                                <a href="https://www.aquaplanet.co.kr/yeosu/index.do">아쿠아플라넷 여수</a>
+                                <a>지도로 보기</a>
                             </div>
                         </div>
-                        <span></span>
-                    </li> 
-                    <li class ="openall">
+                    </div> 
+                    <!-- <li class ="openall">
                         <a><img src="img/logo_ilsan_horizon.png"></a>
                         <div class="open">
                             <img src="img/gallery_ilsan.jpg">
@@ -234,12 +232,17 @@
                             </div>
                         </div>
                         <span></span>
-                    </li>
-                </ul>
+                    </li> -->
             </figure>
         </article>
+        <div id="map" style="width:100%;height:350px;"></div>
+            <p>
+                <button onclick="setCenter()">지도 중심좌표 이동시키기</button> 
+                <button onclick="panTo()">지도 중심좌표 부드럽게 이동시키기</button> 
+            </p>
+            
     </main>  
-
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=a3d081e8ddca94a436d8e877d0bb4142"></script>
     <script src="./js/border0.js"></script>
     <footer></footer>
 </body>
